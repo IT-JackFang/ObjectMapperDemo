@@ -66,10 +66,10 @@ public class ObjectMapperTest {
         userList.add(new XwjUser(4, "ddd", new Date()));
 
         String jsonStr = mapper.writeValueAsString(userList);
-        System.out.println("集合转字符串：" + jsonStr);
+        System.out.println("列表转字符串：" + jsonStr);
 
         List<XwjUser> xwjUserList = mapper.readValue(jsonStr, List.class);
-        System.out.println("字符串转集合：" + xwjUserList);
+        System.out.println("字符串转列表：" + xwjUserList);
 
     }
 
